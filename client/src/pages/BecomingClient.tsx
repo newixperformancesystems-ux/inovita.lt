@@ -133,7 +133,7 @@ export default function BecomingClient() {
         }))
       );
 
-      const response = await fetch('/api/becoming-client', {
+      const response = await fetch('https://api.inovita.lt/api/becoming-client', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ formData: formDataObj, attachments }),
